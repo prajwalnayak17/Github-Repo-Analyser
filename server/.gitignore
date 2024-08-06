@@ -1,0 +1,9 @@
+review-agent-env
+/code_review_project/code_review/__pycache__/
+/code_review_project/code_review_project/__pycache__/
+/.idea/
+/code_review_project/code_review/repositories/
+/code_review_project/static/
+/code_review_project/staticfiles/
+/code_review_project/code_review/services/repositories/
+*/.env

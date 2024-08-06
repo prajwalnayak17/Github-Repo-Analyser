@@ -1,0 +1,104 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add this to your CSS file or Tailwind configuration */
+.file-browser-container {
+  width: 400px; /* Adjust as needed */
+  overflow: auto;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2d3748; /* Darker background color for the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Dark color for the thumb */
+  border-radius: 6px;
+  border: 3px solid #2d3748; /* Matching color with the track */
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4a5568 #2d3748; /* Firefox scrollbar customization */
+}
+
+/* Ensure text color and background color contrast */
+.bg-white {
+  background-color: #ffffff; /* White background */
+}
+
+.markdown-content p {
+  margin-bottom: 1rem;
+}
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.markdown-content ul,
+.markdown-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+.markdown-content blockquote {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  border-left: 0.25rem solid #ccc;
+}
+.markdown-content pre {
+  margin-bottom: 1rem;
+}
+.markdown-content strong {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* In your CSS file (e.g., styles.css) or inside a <style> tag in your component */
+@keyframes borderGlow {
+  0% {
+    border-color: rgba(255, 105, 180, 0.5);
+  }
+  50% {
+    border-color: rgb(93, 202, 238);
+  }
+  100% {
+    border-color: rgba(255, 105, 180, 0.5);
+  }
+}
+
+.border-animated {
+  border: 2px solid rgba(95, 175, 250, 0.77);
+  animation: borderGlow 1.5s infinite;
+}
+
+.border-glow {
+  border: 2px solid rgba(255, 105, 180, 1);
+}
+
+/* Apply a custom font and enhance styles */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
